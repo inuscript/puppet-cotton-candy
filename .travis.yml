@@ -1,8 +1,8 @@
 os:
-- linux
+  - linux
 language: node_js
 node_js:
-- '8'
+  - '8'
 
 script:
-- node script.js
+  - node script.js
