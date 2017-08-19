@@ -29,9 +29,12 @@ const hasCottonFlavor = (flavors) => {
       ...seasonFlavors, ...standardFlavors
     ])
   })
+  console.log(result)
   hasCottonFlavor(result)
   browser.close();
 })().catch(e => {
+  console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
   console.log(e.toString())
+  console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
   process.exit(1)
 })
