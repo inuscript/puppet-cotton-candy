@@ -5,6 +5,10 @@ const getFlavorPage = () => {
   return "https://www.31ice.co.jp/contents/product/flavor/index.html"
 }
 
+const checkFlavorCount = (flavors) => {
+  assert.notEqual(flavors.length, 0, 'No flavor found')
+}
+
 const hasCottonFlavor = (flavors) => {
   flavors.map(flavor => {
     assert(!/.+コットン.+/.test(flavor), `${flavor} found`)
@@ -30,8 +34,10 @@ const hasCottonFlavor = (flavors) => {
     ])
   })
   console.log(result)
+  checkFlavorCount(result)
   hasCottonFlavor(result)
   browser.close();
+  console.log("Cannot found cotton flavor")
 })().catch(e => {
   console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
   console.log(e.toString())
