@@ -7,7 +7,7 @@ const getFlavorPage = () => {
 
 const hasCottonFlavor = (flavors) => {
   flavors.map(flavor => {
-    assert(!/.+コットン.+/.test(flavor), `${flavor} found`)
+    assert(!/.+チョコ.+/.test(flavor), `${flavor} found`)
   })
 }
 
