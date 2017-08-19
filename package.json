@@ -1,0 +1,10 @@
+{
+  "name": "puppet-cotton-candy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "inuscript <inuscript@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^0.9.0"
+  }
+}
